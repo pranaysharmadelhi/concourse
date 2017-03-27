@@ -1,0 +1,19 @@
+<div data-role="view" data-title="Builds" id="builds" data-init="initBuilds" data-reload="true" data-hide="hideBuilds" data-layout="" data-use-native-scrolling="true">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a class="nav-button" data-align="left" data-role="backbutton" id="buildsCancel">Cancel</a>
+            <span data-role="view-title"></span>
+            <a data-click="triggerBuild" id="trigger-build-button" data-align="right" data-role="button" class="km-primary right-button"  data-animated="true" data-icon="add">Trigger</a>
+        </div>
+    </header>
+
+    <div class="action-buttons">
+    </div>
+
+    <ul id="buildListView" class="main-menu">
+    </ul>
+    <script type="text/x-kendo-template" id="build-template">
+        <a class="jobstatus-#: status#" href="builddetails.html?pipelineid=#=getParameterByName('pipelineid')#&jobname=#=getParameterByName('jobname')#&buildid=#:id#&status=#:status#" data-transition="none">#= getParameterByName('jobname')# \\##: name # - # if(typeof start_time !== 'undefined') { # #=moment.duration(moment().diff(moment(start_time, 'X'))).humanize()# # } # ago </a>
+    </script>
+    <span id="triggerNotification" style="display:none;"></span>
+</div>

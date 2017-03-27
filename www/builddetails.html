@@ -1,0 +1,20 @@
+<div data-role="view" data-title="Build Details" id="buildDetails" data-init="initBuildDetails" data-hide="hideBuildDetails" data-reload="true" data-layout="" data-use-native-scrolling="true">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a class="nav-button" data-align="left" data-role="backbutton" id="buildDetailsCancel">Cancel</a>
+            <span data-role="view-title"></span>
+        </div>
+    </header>
+
+    <div class="action-buttons">
+        <a id="abort-build-button" type="button" data-role="button" class="km-justified km-primary km-large" data-icon="trash">Abort</a>
+    </div>
+
+    <ul id="buildDetailsListView" class="main-menu">
+    </ul>
+    <script type="text/x-kendo-template" id="build-details-template">
+        <span data-bind="text: this"></span>
+    </script>
+    <span id="abortNotification" style="display:none;"></span>
+
+</div>

@@ -1,0 +1,24 @@
+{
+  "name": "concourse-ci",
+  "version": "4.0.3",
+  "description": "> A mobile friendly UI for Concourse CI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pranaysharmadelhi/concourse.git"
+  },
+  "author": "Pranay Sharma",
+  "license": "MIT",
+  "keywords": [
+    "concourse:mobile",
+    "concourse:phonegap",
+    "concourse:cordova",
+    "concourse:ios",
+    "concourse:android",
+    "concourse:iphone",
+    "concourse:hybrid"
+  ],
+  "bugs": {
+    "url": "https://github.com/pranaysharmadelhi/concourse/issues"
+  },
+  "homepage": "https://github.com/pranaysharmadelhi/concourse"
+}

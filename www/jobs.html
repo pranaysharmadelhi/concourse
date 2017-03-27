@@ -1,0 +1,15 @@
+<div data-role="view" data-title="Jobs" id="jobs" data-init="initJobs" data-show="showJobs" data-hide="hideJobs" data-reload="true" data-layout="" data-use-native-scrolling="true">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a class="nav-button" data-align="left" data-role="backbutton" id="jobsCancel">Cancel</a>
+            <span data-role="view-title"></span>
+            <a id="pipeline-delete-button" data-align="right" data-role="button" class="km-primary right-button" data-icon="trash">Delete</a>
+        </div>
+    </header>
+    <ul id="jobListView" class="main-menu">
+    </ul>
+    <script type="text/x-kendo-template" id="job-template">
+        <a class="# if(next_build!=null) {  #jobstatus-started#  } else if(finished_build!=null) { #jobstatus-#= finished_build.status # # }  #" href="builds.html?pipelineid=#=getParameterByName('pipelineid')#&jobname=#: name #" data-transition="none">#: name #</a>
+    </script>
+
+</div>
