@@ -13,3 +13,8 @@ npm-debug.log
 resources/signing
 
 .idea
+Certificates.p12
+CertificateSigningRequest.certSigningRequest
+Concourse_CI.mobileprovision
+ConcourseCI.ipa
+ios_distribution.cer
