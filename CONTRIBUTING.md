@@ -1,6 +1,6 @@
 ## Contributing
 
-Thank you for your interest in contributing to the Concourse CI - Mobile UI.
+Thank you for your interest in contributing to the Concourse CI - Mobile.
 
 #### Issues
 
